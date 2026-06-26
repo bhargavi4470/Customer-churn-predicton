@@ -1,63 +1,271 @@
 # 📉 Customer Churn Prediction System
 
-A machine learning–based system that predicts whether a customer is likely to discontinue a service by analyzing historical customer data. The project helps businesses identify at-risk customers and improve retention strategies using data-driven insights.
+<p align="center">
+
+![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit)
+![Scikit Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas)
+![Machine Learning](https://img.shields.io/badge/Machine-Learning-success?style=for-the-badge)
+
+</p>
+
+<p align="center">
+An intelligent Machine Learning application that predicts whether a customer is likely to churn based on customer demographics, subscription details, and service usage patterns.
+</p>
 
 ---
 
-## 📌 Project Overview
+# 📖 Project Overview
 
-The **Customer Churn Prediction System** analyzes historical customer data to predict whether a customer is likely to discontinue a service. It leverages data preprocessing, feature engineering, and supervised machine learning models to help businesses identify at-risk customers and improve retention strategies.
+The **Customer Churn Prediction System** is a Machine Learning-based web application developed using **Python**, **Scikit-learn**, and **Streamlit**.
 
-This project aims to:
-- Reduce customer attrition  
-- Improve customer retention and loyalty  
-- Support data-driven business decisions  
+The system analyzes customer information such as contract type, tenure, payment method, internet service, monthly charges, and total charges to predict whether a customer is likely to discontinue the service.
 
----
-
-## 🎯 Objectives
-
-- Predict customers likely to churn with high accuracy  
-- Analyze customer behavior and usage patterns  
-- Provide actionable insights for retention strategies  
-- Enhance business performance through predictive analytics  
+This project enables businesses to identify high-risk customers early and take proactive retention measures.
 
 ---
 
-## 📊 Dataset
+# ✨ Features
 
-- **Dataset:** Customer Churn Dataset  
-- **Source:** Kaggle  
-- **Size:** Thousands of customer records  
-- **Features:** customer demographics, service usage, contract details, payment information  
-- **Labels:** Churn, Not Churn  
-
----
-
-## ⚙️ Key Features
-
-- Data preprocessing and feature engineering  
-- Machine learning-based churn prediction model  
-- Model evaluation using accuracy and performance metrics  
-- Clear and interpretable churn predictions  
-- Modular and well-structured codebase  
+- 📊 Customer Churn Prediction
+- 🤖 Machine Learning Classification Model
+- 📈 Churn Probability Score
+- ⚡ Instant Prediction Results
+- 📋 Interactive Customer Information Form
+- 💡 Business Decision Support
+- 🖥️ User-Friendly Streamlit Interface
+- 📉 Data-Driven Customer Retention Insights
 
 ---
 
-## 🛠️ Tech Stack
+# 🎯 Objectives
 
-- **Programming Language:** Python  
-- **Libraries:** Scikit-learn, Pandas, NumPy  
-- **ML Techniques:** Classification Algorithms, Feature Engineering  
-- **Framework:** Jupyter Notebook / Streamlit  
-- **Version Control:** Git & GitHub  
+- Predict customers who are likely to churn.
+- Improve customer retention strategies.
+- Reduce business revenue loss.
+- Assist decision-making using predictive analytics.
+- Analyze customer behavior using historical data.
 
 ---
 
-## 🚀 How to Run the Project
+# 📊 Dataset
+
+**Dataset:** Customer Churn Dataset
+
+**Source:** Kaggle
+
+### Dataset Includes
+
+- Customer Demographics
+- Customer Tenure
+- Monthly Charges
+- Total Charges
+- Contract Type
+- Internet Service
+- Payment Method
+- Senior Citizen Status
+
+### Target Variable
+
+- Churn
+- Not Churn
+
+---
+
+# 🧠 Machine Learning Workflow
+
+```
+Customer Details
+        │
+        ▼
+Data Preprocessing
+        │
+        ▼
+Feature Encoding
+        │
+        ▼
+Machine Learning Model
+        │
+        ▼
+Prediction Probability
+        │
+        ▼
+Likely to Churn / Not Likely to Churn
+```
+
+---
+
+# 🛠️ Tech Stack
+
+## Programming Language
+
+- Python
+
+## Machine Learning
+
+- Scikit-learn
+
+## Data Analysis
+
+- Pandas
+- NumPy
+
+## Visualization
+
+- Streamlit
+
+## Model Serialization
+
+- Joblib
+
+## Version Control
+
+- Git
+- GitHub
+
+---
+
+# 📂 Project Structure
+
+```text
+Customer-Churn-Prediction/
+│
+├── app.py
+├── model.pkl
+├── encoder.pkl
+├── scaler.pkl
+├── requirements.txt
+├── README.md
+│
+├── Screenshots/
+│   ├── Customer churn prediction.png
+│   └── Prediction.png
+│
+└── dataset/
+```
+
+---
+
+# 📸 Application Screenshots
+
+## 🏠 Customer Churn Prediction Form
+
+<p align="center">
+<img src="screenshots/Customer%20churn%20prediction.png" width="900">
+</p>
+
+The application provides an interactive form where users can enter customer information such as:
+
+- Tenure
+- Monthly Charges
+- Total Charges
+- Contract Type
+- Internet Service
+- Payment Method
+- Senior Citizen Status
+
+After entering the details, users can instantly predict whether the customer is likely to churn.
+
+---
+
+## 📊 Prediction Result
+
+<p align="center">
+<img src="screenshots/Prediction.png" width="900">
+</p>
+
+After clicking **Predict Churn**, the application displays:
+
+- ✅ Churn Prediction
+- 📈 Probability Score
+- 💡 Easy-to-understand result indicating whether the customer is likely to churn or remain.
+
+---
+
+# 🚀 Installation
+
+## Clone Repository
 
 ```bash
-git clone https://github.com/your-username/Customer-Churn-Prediction.git
-cd Customer-Churn-Prediction
+git clone https://github.com/bhargavi4470/Customer-churn-predicton.git
+
+cd Customer-churn-predicton
+```
+
+---
+
+## Install Dependencies
+
+```bash
 pip install -r requirements.txt
-python main.py
+```
+
+---
+
+## Run the Application
+
+```bash
+streamlit run app.py
+```
+
+The application will launch in your browser at:
+
+```
+http://localhost:8501
+```
+
+---
+
+# 📈 Prediction Workflow
+
+```
+Customer Input
+       │
+       ▼
+Data Cleaning
+       │
+       ▼
+Feature Encoding
+       │
+       ▼
+Machine Learning Model
+       │
+       ▼
+Probability Calculation
+       │
+       ▼
+Prediction Result
+```
+
+---
+
+# 💡 Future Enhancements
+
+- 📊 Customer Analytics Dashboard
+- ☁️ Cloud Deployment (AWS / Azure)
+- 📈 Explainable AI (SHAP/LIME)
+- 🤖 Deep Learning Models
+- 📧 Customer Retention Alert System
+- 📱 Mobile-Friendly Interface
+- 🔍 Batch Customer Prediction
+
+---
+
+# 👩‍💻 Developed By
+
+**Mangam Sai Ram Bhargavi**
+
+**GitHub:**  
+https://github.com/bhargavi4470
+
+
+---
+
+# ⭐ Support
+
+If you found this project helpful, please consider giving it a ⭐ on GitHub.
+
+Your support motivates future improvements and open-source contributions.
+
+---
