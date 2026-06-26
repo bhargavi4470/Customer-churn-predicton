@@ -40,11 +40,14 @@ input_dict = {
     "PaymentMethod_Credit card": 1 if payment_method == "Credit card" else 0,
 }
 
-input_df = pd.DataFrame([input_dict])
 feature_cols = joblib.load('feature_columns.pkl')
-for col in feature_cols:
-    if col not in input_df.columns:
-        input_df[col] = 0
+# Create a dictionary initialized to 0 for all features to avoid fragmentation
+encoded_dict = {col: 0 for col in feature_cols}
+for col, val in input_dict.items():
+    if col in encoded_dict:
+        encoded_dict[col] = val
+
+input_df = pd.DataFrame([encoded_dict])
 input_df = input_df[feature_cols]
 
 
